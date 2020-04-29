@@ -1,0 +1,17 @@
+.qualiy{
+    padding: 6.478em 0;
+}
+
+.qualiy .quality-wrapper .quality-icon{margin-bottom: 1em;}
+
+.qualiy .quality-wrapper .quality-label h4{
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.qualiy .quality-wrapper .quality-label p{
+    font-size: .778em;
+    color: #71706c;
+    padding: 0 2.6em;
+    line-height: 1.6;
+}

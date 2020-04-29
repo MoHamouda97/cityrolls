@@ -1,0 +1,5 @@
+.slider{
+    direction: ltr;
+}
+
+.slider .slider-item{height: 110vh;}

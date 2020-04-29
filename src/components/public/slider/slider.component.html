@@ -1,0 +1,13 @@
+<section class="slider">
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide *ngFor="let slide of slides">
+            <div 
+                class="slider-item bg-img"
+                [style.background]="'url('+slide.photo+')'"
+                ></div>            
+        </ng-template>                               
+    </owl-carousel-o>
+    <div class="loader text-center" *ngIf="loader">
+        <nz-spin nzSimple></nz-spin>
+    </div>        
+</section>

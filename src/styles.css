@@ -1,1 +1,124 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+/* start global */
+
+body{
+    direction: rtl;
+    font-family: 'Cairo', sans-serif !important;
+    overflow-x: hidden;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none !important;
+    font-size: 15px !important;
+}
+
+section{margin-top: 60px;}
+
+section.slider{margin-top: 0;}
+
+/* start classes */
+
+.special-link{
+    width: fit-content;
+    display: block;
+}
+
+.align-center{align-items: center;}
+
+.bg-img{
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+/* start owl carousel */
+
+.owl-theme .owl-dots .owl-dot span{
+    background-color: #fff !important;
+    opacity: .7;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #c00a27!important;
+    opacity: 1;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* antd */
+
+.ant-input-prefix{
+    margin-left: 4px;
+    position: relative;
+    top: 5px;
+}
+
+.ant-pagination{width: 100%;}
+
+.ant-pagination-prev, 
+.ant-pagination-jump-prev, 
+.ant-pagination-jump-next,
+.ant-pagination-item{
+    margin-left: 22px;
+    margin-right: 0;
+}
+
+.ant-pagination-prev 
+.ant-pagination-item-link, 
+.ant-pagination-next 
+.ant-pagination-item-link{
+    transform: rotate(180deg);
+}
+
+.ant-pagination-item-link i{
+    position: relative;
+    bottom: 3px;
+}
+
+.ant-pagination-item{
+    border: 1px solid #d7d7d7;
+    display: inline-block;
+    color: #817f81;
+    border-radius: 50%;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.ant-pagination-item-active{
+    font-weight: 700;
+    background-color: #f0f0f0;
+    border-color: #f0f0f0;
+    color: #2d2b2d;
+}
+
+.ant-pagination-prev:focus .ant-pagination-item-link, 
+.ant-pagination-next:focus .ant-pagination-item-link, 
+.ant-pagination-prev:hover .ant-pagination-item-link, 
+.ant-pagination-next:hover .ant-pagination-item-link,
+.ant-pagination-item:focus, 
+.ant-pagination-item:hover{
+    color: #817f81;
+    border-color: #817f81;
+}
+
+.ant-upload.ant-upload-select {
+    width: 100%;
+}
+
+.ant-spin-dot-item{background-color: #c00a27;}
+
+nz-spin{width: 100%;}

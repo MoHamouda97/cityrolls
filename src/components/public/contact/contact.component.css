@@ -1,0 +1,33 @@
+.contact .contact-header h3{
+    font-weight: 700;
+    color: #2d2b2d;
+    text-align: center;
+}
+
+.contact .contact-header p{
+    text-align: justify !important;
+    line-height: 1.8;
+    color: #787878;
+    width: 75%;
+    margin: auto;
+}
+
+.contact .contact-form{
+    margin-top: 60px;
+}
+
+.contact .contact-form textarea{
+    height: 250px;
+    resize: none;
+}
+
+.contact .contact-form .submit-button{
+    color: #fff;
+    background-color: #99081f;
+    width: 200px;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    padding: 10px;
+}

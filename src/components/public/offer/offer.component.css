@@ -1,0 +1,70 @@
+.offer{
+    height: 468px;
+    position: relative;
+}
+
+.offer .offer-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.offer .offer-content .pre-title{
+    position: relative;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.563em;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.offer .offer-content .pre-title span{
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    position: relative;
+    padding: 0 20px;
+}
+
+.offer .offer-content .pre-title span::before{right: 100%;}
+
+.offer .offer-content .pre-title span::after{left: 100%;}
+
+.offer .offer-content .pre-title span::before,
+.offer .offer-content .pre-title span::after{
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: .6em;
+    border-top: 1px solid #fff;
+}
+
+.offer .offer-content .section-title{
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: .2em;
+    color: #fff;
+}
+
+.offer .offer-content .product-price{
+    font-size: 6.625em;
+    color: #fff;
+    line-height: .6em;
+}
+
+.offer .offer-content .product-price .price{font-weight: 700;}
+
+.offer .offer-content .product-price .price .currency,
+.offer .offer-content .product-price .price .decimals{
+    line-height: 1em;
+    font-size: .5em;
+    vertical-align: top;
+}
+
+.offer .offer-content .product-price .price .currency{font-style: italic;}
+
+.offer .offer-content .add-cart{margin-top: 35px;}

@@ -1,0 +1,115 @@
+<section class="jobs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jobs-header">
+                    <h3>
+                        الوظائف
+                    </h3>
+                    <p class="text-right">
+                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+                        أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+                        أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . 
+                    </p> 
+                </div>                             
+            </div>
+
+            <div class="col-md-12">
+                <form nz-form [formGroup]="validateForm" class="job-form">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <nz-form-item>
+                                    <nz-form-control nzErrorTip="بالرجاء كتابة الاسم">
+                                        <nz-input-group nzPrefixIcon="user">
+                                            <input 
+                                                type="text" 
+                                                nz-input 
+                                                formControlName="name" 
+                                                placeholder="الاسم" 
+                                                class="form-control"
+                                            />
+                                        </nz-input-group>
+                                    </nz-form-control>
+                                </nz-form-item>  
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <nz-form-item>
+                                    <nz-form-control nzErrorTip="بالرجاء كتابة الايميل">
+                                        <nz-input-group nzPrefixIcon="mail">
+                                            <input
+                                                placeholder="البريد الالكتروني"
+                                                nz-input
+                                                [(ngModel)]="inputValue"
+                                                (input)="onInput($event)"
+                                                [nzAutocomplete]="auto"
+                                                type="email"
+                                                formControlName="email"
+                                                email
+                                                class="form-control"
+                                          />
+                                          <nz-autocomplete #auto>
+                                            <nz-auto-option *ngFor="let option of options" [nzValue]="option">{{ option }}</nz-auto-option>
+                                          </nz-autocomplete>                                                            
+                                        </nz-input-group>
+                                    </nz-form-control>
+                                </nz-form-item>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <nz-form-item>
+                                    <nz-form-control nzErrorTip="بالرجاء كتابة عنوان الوظيفة">
+                                        <nz-input-group nzPrefixIcon="edit">
+                                            <input  
+                                                type="text" 
+                                                nz-input 
+                                                formControlName="jobTitle" 
+                                                placeholder="عنوان الوظيفة" 
+                                                class="form-control"                                                            
+                                            />
+                                        </nz-input-group>
+                                    </nz-form-control>
+                                </nz-form-item>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <nz-form-item>
+                                    <nz-form-control nzErrorTip="بالرجاء كتابة رقم الهاتف">
+                                        <nz-input-group nzPrefixIcon="mobile">
+                                            <input  
+                                                type="number" 
+                                                nz-input 
+                                                formControlName="phone" 
+                                                placeholder="رقم الهاتف"  
+                                                class="form-control"                                                           
+                                            />
+                                        </nz-input-group>
+                                    </nz-form-control>
+                                </nz-form-item>
+                            </div>
+                            <div class="col-12 col-sm-12">
+                                <nz-form-item>
+                                    <nz-form-control nzErrorTip="Please upload your CV">
+                                        <nz-upload 
+                                            nzAction="https://jsonplaceholder.typicode.com/posts/"
+                                        >
+                                            <button nz-button matRipple class="upload-btn w-100">
+                                                <i nz-icon nzType="upload"></i>
+                                                <span>بالرجاء ادراج ال cv</span>
+                                            </button>
+                                        </nz-upload>
+                                    </nz-form-control>
+                                </nz-form-item>
+                            </div>                                                         
+                            <div class="col-12 col-sm-12 text-right">
+                                <nz-form-item>
+                                    <nz-form-control>
+                                      <button class="submit-button" matRipple>انضم الينا</button>
+                                    </nz-form-control>
+                                </nz-form-item>
+                            </div>
+                        </div>
+                    </div>                           
+                </form> 
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,109 @@
+.nav-bar{
+    padding: 10px;
+    background-color: #c00a27;
+}
+
+.nav-bar .site-links li{display: inline-block;}
+
+.nav-bar .site-links li a{
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    display: block;
+    padding: 1.8em 1.3em 1.618em 1.3em;
+    border-radius: 6px;
+}
+
+.nav-bar .site-links li a.active{color: #ffae00;}
+
+.nav-bar .site-links li a:hover{color: #ffae00;}
+
+.nav-bar .order-hint .order-title{
+    font-size: .875em;
+    color: #ffae00;
+    margin-bottom: 5px;
+}
+
+.nav-bar .order-hint .order-number{
+    font-weight: 800;
+    color: #fff;
+    font-size: 1.75em;
+}
+
+.nav-bar .cart-menu .cart-content{position: relative;}
+
+.nav-bar .cart-menu .cart-content > a{
+    padding: .66em .9em;
+    background-color: #8ca93e;
+    border-radius: 50px;
+    color: #fff;
+    line-height: 1;
+    display: block;
+    max-width: 100%;
+    position: relative;
+}
+
+.nav-bar .cart-menu .cart-content > a i{
+    font-size: 25px;
+    position: relative;
+    top: -1px;
+}
+
+.nav-bar .cart-menu .cart-content > a .cart-items{
+    position: absolute;
+    right: 60px;
+    top: 2px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #c00a27;
+    line-height: 20px;
+
+}
+
+.nav-bar .cart-menu .cart-content .sub-menu{
+    border-top: 2px solid #226f0b;
+    width: 145px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -70px;
+    overflow: hidden;
+    min-height: 52px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+}
+
+.nav-bar .cart-menu .cart-content .sub-menu li{
+    background-color: #fff;
+    height: 45px;
+    width: inherit;
+    transition: transform .3s;
+    transform: translate(0,-44px);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .3)
+}
+
+.nav-bar .cart-menu .cart-content .sub-menu li::after{
+    color: #fff;
+    content: " ";
+    font-size: 18px;
+    align-items: center;
+    padding-bottom: 12px;
+    bottom: 2px;
+    position: relative;
+    display: block;
+    margin: auto;
+    background: linear-gradient(30deg,transparent 40px,#fff 40px),linear-gradient(-45deg,transparent 40px,#fff 40px),linear-gradient(45deg,transparent 34px,#fff 34px),linear-gradient(-45deg,transparent 34px,#fff 34px);
+    background-size: 7px calc(100% + 34px);
+}
+
+.nav-bar .cart-menu .cart-content .sub-menu li a{
+    padding: 0 20px;
+    color: #2d2b2d;
+    line-height: 45px;
+}
+
+.nav-bar .cart-menu .cart-content .sub-menu li a .amount{font-weight: bold;}
+
+.nav-bar .cart-menu .cart-content .sub-menu li.cart-hover{transform: translate(0,0);}

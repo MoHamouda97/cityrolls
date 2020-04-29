@@ -1,0 +1,100 @@
+<section class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="contact-header">
+                    <h3>
+                        تواصل معنا
+                    </h3>
+                    <p class="text-right">
+                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+                        أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+                        أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . 
+                    </p> 
+                </div>                             
+            </div>
+
+            <div class="col-md-12">
+                <form nz-form [formGroup]="validateForm" class="contact-form">
+                    <div class="row">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12">
+                                    <nz-form-item>
+                                        <nz-form-control nzErrorTip="بالرجاء كتابة الاسم">
+                                            <nz-input-group nzPrefixIcon="user">
+                                                <input 
+                                                    type="text" 
+                                                    nz-input 
+                                                    formControlName="name" 
+                                                    placeholder="الاسم"
+                                                    class="form-control"
+                                                />
+                                            </nz-input-group>
+                                        </nz-form-control>
+                                    </nz-form-item>  
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <nz-form-item>
+                                        <nz-form-control nzErrorTip="بالرجاء كتابة الايميل">
+                                            <nz-input-group nzPrefixIcon="mail">
+                                                <input
+                                                    placeholder="البريد الالكتروني"
+                                                    nz-input
+                                                    [(ngModel)]="inputValue"
+                                                    (input)="onInput($event)"
+                                                    [nzAutocomplete]="auto"
+                                                    type="email"
+                                                    formControlName="email"
+                                                    class="form-control"
+                                              />
+                                              <nz-autocomplete #auto>
+                                                <nz-auto-option *ngFor="let option of options" [nzValue]="option">{{ option }}</nz-auto-option>
+                                              </nz-autocomplete>                                                            
+                                            </nz-input-group>
+                                        </nz-form-control>
+                                    </nz-form-item>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <nz-form-item>
+                                        <nz-form-control nzErrorTip="بالرجاء كتابة عنوان الرسالة">
+                                            <nz-input-group nzPrefixIcon="edit">
+                                                <input  
+                                                    type="text" 
+                                                    nz-input 
+                                                    formControlName="subject" 
+                                                    placeholder="عنوان الرسالة"  
+                                                    class="form-control"                                                           
+                                                />
+                                            </nz-input-group>
+                                        </nz-form-control>
+                                    </nz-form-item>
+                                </div>
+                                <div class="col-12">
+                                    <nz-form-item>
+                                        <nz-form-control nzErrorTip="بالرجاء كتابة الرسالة">
+                                            <nz-input-group>
+                                                <textarea 
+                                                    formControlName="message" 
+                                                    nz-input 
+                                                    placeholder="الرسالة"
+                                                ></textarea>
+                                            </nz-input-group>
+                                        </nz-form-control>
+                                    </nz-form-item>
+                                </div>
+                                <div class="col-12 text-right">
+                                    <nz-form-item>
+                                        <nz-form-control>
+                                          <button class="submit-button" matRipple>ارسال</button>
+                                        </nz-form-control>
+                                    </nz-form-item>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                            
+                </form>                
+            </div>
+        </div>
+    </div>
+</section>

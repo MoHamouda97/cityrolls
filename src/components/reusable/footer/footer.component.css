@@ -1,0 +1,85 @@
+.main-footer{
+    position: relative;
+    background-color: #2c2c2c;
+    text-align: center;
+    padding-top: 5.5em;
+}
+
+.main-footer .footer-social-icons{margin-bottom: 3.375em;}
+
+.main-footer .footer-social-icons ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-footer .footer-social-icons ul li a{
+    color: #969696;
+    font-size: 1.125em !important;
+    border: 1px solid #969696;
+    border-radius: 50%;
+    display: block;
+    width: 52px;
+    height: 52px;
+    position: relative;
+    line-height: 52px;
+}
+
+.main-footer .footer-social-icons ul li a:hover{
+    color: #636363;
+    border-color: #636363;
+}
+
+.main-footer .footer-logo{
+    width: 200px;
+    margin: 0 auto 52px auto;
+}
+
+.main-footer .site-address ul li{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .875em;
+    color: #ddd;
+}
+
+.main-footer .site-address ul li + li::before{
+    content: " ";
+    width: 1px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 25px 0 22px;
+    background-color: #c00a27;
+}
+
+.main-footer .copy{margin-bottom: 4.34em;}
+
+.main-footer .copy p{
+    margin: 0;
+    font-size: .813em;
+    color: #7f7f7f;
+    line-height: 1.615em;
+}
+
+.main-footer .gmap{
+    color: #fff;
+    font-weight: 900;
+    line-height: 1.929em;
+    display: inline-block;
+    padding: 1.214em 3.746em;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background-color: #f31438;
+    position: relative;
+    top: 7px;
+    cursor: pointer;
+}
+
+.main-footer .gmap i{
+    position: relative;
+    top: -1px;
+    font-size: 25px;
+}
+
+.gmap-footer{
+    display: none;
+}

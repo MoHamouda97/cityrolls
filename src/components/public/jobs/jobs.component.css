@@ -1,0 +1,35 @@
+.jobs .jobs-header h3{
+    font-weight: 700;
+    color: #2d2b2d;
+    text-align: center;
+}
+
+.jobs .jobs-header p{
+    text-align: justify !important;
+    line-height: 1.8;
+    color: #787878;
+    width: 75%;
+    margin: auto;
+}
+
+.jobs .job-form{
+    margin-top: 60px;
+}
+
+.jobs .job-form .upload-btn i{
+    font-size: 15px;
+    position: relative;
+    top: -3px;
+    margin-left: 4px;
+}
+
+.jobs .job-form .submit-button{
+    color: #fff;
+    background-color: #99081f;
+    width: 200px;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    padding: 10px;
+}

@@ -1,0 +1,25 @@
+<section class="products">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="filter list-unstyled text-right">
+                    <li class="active" matRipple>جميع منتجاتنا:</li>
+                    <li matRipple>عصائر</li>
+                    <li matRipple>معجنات</li>
+                    <li matRipple>سوشي</li>
+                    <li matRipple>و المزيد ...</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="all-products">
+        <div class="container">
+            <app-product-card></app-product-card>
+        </div>
+    </div>
+
+    <div class="pagination text-center">
+        <nz-pagination [nzPageIndex]="1" [nzTotal]="50"></nz-pagination>
+    </div>
+</section>

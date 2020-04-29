@@ -1,0 +1,16 @@
+<div class="row products">
+    <div class="col-md-4 216 mix" *ngFor="let p of products" style="margin-bottom: 20px;">
+        <div class="product-card text-center">
+            <div id="product_image_wrapper" class="product-image-wrapper">
+                <img src="{{p.photo}}" alt="product card" class="w-100" />
+            </div>
+            <div id="product_content_wrapper" class="product-content-wrapper">
+                <h2 class="product-title">{{p.name}}</h2>
+                <span class="product-price">{{p.price}} LE</span>
+                <div id="hover_area" class="hover-area">
+                    <app-add-cart-btn [product]="p"></app-add-cart-btn>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
